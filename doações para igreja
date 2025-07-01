@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Campanha de Doação da Igreja</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8f8fc;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #5e2ca5;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 1.5em;
+    }
+    main {
+      padding: 30px 20px;
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #ddd;
+    }
+    .igreja {
+      display: flex;
+      align-items: center;
+      background: #f0f0f5;
+      border-radius: 8px;
+      padding: 10px;
+      margin: 10px 0;
+      box-shadow: 0 0 5px #ccc;
+    }
+    .igreja img {
+      width: 50px;
+      height: 50px;
+      margin-right: 15px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    h2 {
+      margin-top: 30px;
+      font-size: 1.2em;
+      text-align: center;
+    }
+    input[type="number"] {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    .botao-doar {
+      background-color: #5e2ca5;
+      color: white;
+      border: none;
+      width: 100%;
+      padding: 14px;
+      border-radius: 8px;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .botao-doar:hover {
+      background-color: #4a218c;
+    }
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Campanha de Doação da Igreja
+  </header>
+
+  <main>
+    <p style="text-align:center; font-size: 18px;">
+      Ajude nossa missão! Sua doação é essencial para continuarmos espalhando fé e esperança.
+    </p>
+
+    <div class="igreja">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Catedral_da_Se_SP.jpg/120px-Catedral_da_Se_SP.jpg" alt="Catedral da Sé" />
+      <span>Catedral da Sé - SP</span>
+    </div>
+
+    <div class="igreja">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Santuario_Aparecida.jpg/120px-Santuario_Aparecida.jpg" alt="Aparecida" />
+      <span>Santuário de Aparecida</span>
+    </div>
+
+    <div class="igreja">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Basilica_da_Penha_Recife.jpg/120px-Basilica_da_Penha_Recife.jpg" alt="Basílica da Penha" />
+      <span>Basílica da Penha - Recife</span>
+    </div>
+
+    <h2>Escolha o valor da sua doação (R$)</h2>
+    <input type="number" placeholder="Ex: 20" />
+
+    <button class="botao-doar" onclick="alert('Obrigado pela sua doação! Chave Pix: doacoes@igreja.com')">
+      Doar via Pix
+    </button>
+  </main>
+
+  <footer>
+    © 2025 Nossa Igreja – Muito obrigado pela sua contribuição 🙏
+  </footer>
+</body>
+</html>
